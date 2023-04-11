@@ -12,7 +12,7 @@ public class Main {
     }
 
     public static List<Integer> getRecommendedMovies(List<Integer> moviesDuration,int flightDuration){
-        List<Integer> movies = new ArrayList<>(moviesDuration.size());
+        List<Integer> movies = new ArrayList<>(2);
         int maxDuration = flightDuration - 30;
         int totalDuration=0;
 
@@ -26,7 +26,6 @@ public class Main {
                     movies.clear();
                     movies.add(i);
                     movies.add(j);
-
                 }
             }
         }
